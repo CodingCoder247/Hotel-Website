@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Page name: Contact us -->
+        <title>D'Hotel │ Contact us</title>
+        
+        <!-- Links to external CSS -->
+        <link rel="stylesheet" type="text/css" href="all_mainextcss.css">
+        <link rel="stylesheet" type="text/css" href="R.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script>
+            function Enew() {
+                alert("Thank you for signing up for our newsletter! Stay tuned for updates!")
+            }
+        </script>
+    </head>
+
+    <div class="topnav" id="myTopnav">
+        <a href="R_home.html">HOME</a>
+        <a href="N_events_main.html">EVENT</a>
+                    
+        <div class="dropdown">
+            <button class="dropbtn">ROOMS
+            </button>
+                
+            <div class="dropdown-content">
+                <a href="Z_GuestRooms.html">Guest Rooms</a>
+                <a href="Z_Club.html">Clubs & Suites</a>
+            </div>
+        </div>
+
+        <a href="J_Mainpage.html">DINING</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">SERVICES
+            </button>
+            
+            <div class="dropdown-content">
+                <a href="Nic_SnA.html"> Services & Amenities </a>
+                <a href="Nic_book.html">Booking</a>
+            </div>
+        </div>
+
+        <a href="R_contact.html">CONTACT US</a>
+
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+        }
+    </script>
+    
+    <body>
+        <!--Background image-->
+        <img src="Webpics/contactpic.png" alt="background" id="contact-pic">
+
+        <!--Feedback form button; redirects to feedback form page-->
+        <button id="fdbfbtn" onclick="window.location.href='R_fdbf.html'">Feedback Form</button>
+    
+        <!--Inquiry form button; redirects to inquiry form page-->
+        <button id="inqfbtn" onclick="window.location.href='R_inqf.html'">Inquiry Form</button>
+
+        <!--Contact info-->
+        <h3 id="contact">Get in touch with us!</h3>
+
+        <!--Number-->
+        <img src="Webpics/call.png" alt="Phone icon" id="call"></a>
+        <p id="dnumber"><strong>+65 6123 4578</strong></p>
+
+        <!--Email-->
+        <img src="Webpics/email.png" alt="Email icon" id="demail"></a>
+        <p id="emailaddress"><strong>dhotel@gmail.com</strong></p>
+    
+        <!--Location-->
+        <img src="Webpics/location.png" alt="Location icon" id="location"></a>
+        <p id="address"><strong>231 Outram Rd, Singapore 169040</strong></p>
+        
+        <!--WhatsApp icon image hyperlink, redirects to WhatsApp web-->
+        <a href="https://web.whatsapp.com/">
+        <img src="Webpics/WhatsApp.png" alt="Hotel logo hyperlink to WhatsApp." id="wa"></a>
+        
+        <!--Facebook icon image hyperlink; redirects to Facebook website-->
+        <a href="https://www.facebook.com/">
+        <img src="Webpics/Facebook.png" alt="Hotel logo hyperlink to Facebook." id="fb"></a>
+        
+        <!--Instagram icon image hyperlink; redirects to Instagram page-->
+        <a href="https://www.instagram.com/">
+        <img src="Webpics/Instagram.png" alt="Hotel logo hyperlink to Instagram." id="ig"></a>
+        
+        <!--Twitter icon image hyperlink; redirects to Twitter profile-->
+        <a href="https://twitter.com/">
+        <img src="Webpics/Twitter.png" alt="Hotel logo hyperlink to Twitter." id="t"></a>
+
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.816059930551!2d103.83240247359515!3d1.2842821617859566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1975f3d0a20f%3A0xc36bf4b151a9b1e2!2sD&#39;Hotel%20Singapore!5e0!3m2!1sen!2ssg!4v1690935035154!5m2!1sen!2ssg" width="1264.9" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </body>
+
+    <footer style="z-index: 1;" class="social-footer">
+        <div class="social-footer-left">
+            <a href="R_home.html"><img id="flogo" src="Webpics/DLogo.png"></a>
+        </div>
+  
+        <div id="newsletter">
+            <h5>Join our newsletter!</h5>
+            <input type="email" class="fmail" placeholder="Enter your email"><button onclick="Enew()" class="button2">→</button>
+        </div>
+  
+        <div style="display: block; width: 20%;margin-left: auto;margin-right: auto;" class="social-footer-icons">
+            <ul  class="menu simple">
+                <p><a href="#" id="Cus">Contact Us!</a></p>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </ul>
+        </div>
+    </footer>
+</html>
+

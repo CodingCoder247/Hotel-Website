@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Page name: Feedback -->
+        <title>D'Hotel │ Feedback form</title>
+        
+        <!-- Links to external CSS -->
+        <link rel="stylesheet" type="text/css" href="all_mainextcss.css">
+        <link rel="stylesheet" type="text/css" href="R.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script>
+            function Enew() {
+                alert("Thank you for signing up for our newsletter! Stay tuned for updates!")
+            }
+        </script>
+    </head>
+
+    <div class="topnav" id="myTopnav">
+      <a href="R_home.html">HOME</a>
+      <a href="N_events_main.html">EVENT</a>
+                  
+      <div class="dropdown">
+          <button class="dropbtn">ROOMS
+          </button>
+              
+          <div class="dropdown-content">
+              <a href="Z_GuestRooms.html">Guest Rooms</a>
+              <a href="Z_Club.html">Clubs & Suites</a>
+          </div>
+      </div>
+
+      <a href="J_Mainpage.html">DINING</a>
+
+      <div class="dropdown">
+          <button class="dropbtn">SERVICES
+          </button>
+          
+          <div class="dropdown-content">
+              <a href="Nic_SnA.html"> Services & Amenities </a>
+              <a href="Nic_book.html">Booking</a>
+          </div>
+      </div>
+
+      <a href="R_contact.html">CONTACT US</a>
+
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+
+  <script>
+      function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+      }
+      }
+  </script>
+
+    <body>
+      <h3 id="fdbf"><em>Share your Feedback</em></h3>
+      <form class="form1" action="R_sub.html">
+        <table>
+          <tr>
+            <td><label for="name">Name:</label><br></td>
+            <td><input type="text" required id="name"><br></td>
+          </tr> 
+          <tr>
+            <td><label for="number">Phone number:</label><br></td>
+            <td><input type="number" required id="number" minlength="8" maxlength="8"><br></td>
+          </tr> 
+          <tr>
+            <td><label for="email">Email:</label><br></td>
+            <td><input type="email" required id="email"><br></td>
+          </tr>
+          <tr>
+            <td><label for="dateofstay">Date of stay:</label><br></td>
+            <td><input type="date" required id="date of stay"><br></td>
+          </tr> 
+          <tr>
+            <td><label for="feedback">Feedback:</label><br></td>
+            <td><input type="text" required id="feedback" minlength="5" maxlength="1000"><br></td>
+          </tr>
+        </table>
+        <table> 
+          <tr>
+            <td><input type="submit" value="Submit" id="sub1"></td>
+          </tr>
+        </table>
+    </form>
+  </body>
+
+  <footer style="z-index: 1;" class="social-footer">
+    <div class="social-footer-left">
+        <a href="R_home.html"><img id="flogo" src="Webpics/DLogo.png"></a>
+    </div>
+
+    <div id="newsletter">
+        <h5>Join our newsletter!</h5>
+        <input type="email" class="fmail" placeholder="Enter your email"><button onclick="Enew()" class="button2">→</button>
+    </div>
+
+    <div style="display: block; width: 20%;margin-left: auto;margin-right: auto;" class="social-footer-icons">
+        <ul  class="menu simple">
+            <p><a href="#" id="Cus">Contact Us!</a></p>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </ul>
+    </div>
+</footer>
+</html>

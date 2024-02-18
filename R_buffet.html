@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Page name: Buffet -->
+        <title>D'Hotel │ 1-for-1 Buffet @ Shogun Sushi Bar</title>
+        
+        <!-- Links to external CSS-->
+        <link rel="stylesheet" type="text/css" href="all_mainextcss.css">
+        <link rel="stylesheet" type="text/css" href="R.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script>
+            function Enew() {
+                alert("Thank you for signing up for our newsletter! Stay tuned for updates!")
+            }
+        </script>
+    </head>
+    
+    <div class="topnav" id="myTopnav">
+        <a href="R_home.html">HOME</a>
+        <a href="N_events_main.html">EVENT</a>
+                    
+        <div class="dropdown">
+            <button class="dropbtn">ROOMS
+            </button>
+                
+            <div class="dropdown-content">
+                <a href="Z_GuestRooms.html">Guest Rooms</a>
+                <a href="Z_Club.html">Clubs & Suites</a>
+            </div>
+        </div>
+
+        <a href="J_Mainpage.html">DINING</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">SERVICES
+            </button>
+            
+            <div class="dropdown-content">
+                <a href="Nic_SnA.html"> Services & Amenities </a>
+                <a href="Nic_book.html">Booking</a>
+            </div>
+        </div>
+
+        <a href="R_contact.html">CONTACT US</a>
+
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+        }
+    </script>
+
+    <body>
+        <div class="parallax1"></div>
+        
+        <div style="background-image:url(Webpics/SB2.jpg)"></div>
+
+        <h3 class="tag">1-for-1 Sushi Buffet @ Shogun Sushi Bar</h3>
+        <h2 class="tag">Pay for 1, Dine for 2!</h2>
+        <p class="caption">Enjoy this exclusive Joyful July deal when you bring a friend to dine at Shogun Sushi Bar.</p>
+        <p class="caption" id="price">At just <strong>$79.90 ++</strong>, savour the exquisite Japanese flavours at Shogun Sushi Bar and bring along a partner at absolutely no additional cost!</p>
+
+        <p class="caption">View the <a href="sushimenu.pdf">menu</a> here.</p>
+
+        <em><p class="caption2">To make a reservation for this limited-time buffet, call us at +65 6987 6543.</p></em>
+        <em><p class="caption2">Promotion is valid till 31 July 2023.</p></em>
+        <em><p class="caption2" class="tc">Terms & conditions apply.</p></em>
+    </body>
+
+    <footer style="z-index: 1;" class="social-footer">
+        <div class="social-footer-left">
+            <a href="R_home.html"><img id="flogo" src="Webpics/DLogo.png"></a>
+        </div>
+  
+        <div id="newsletter">
+            <h5>Join our newsletter!</h5>
+            <input type="email" class="fmail" placeholder="Enter your email"><button onclick="Enew()" class="button2">→</button>
+        </div>
+  
+        <div style="display: block; width: 20%;margin-left: auto;margin-right: auto;" class="social-footer-icons">
+            <ul  class="menu simple">
+                <p><a href="#" id="Cus">Contact Us!</a></p>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </ul>
+        </div>
+    </footer>
+</html>
+

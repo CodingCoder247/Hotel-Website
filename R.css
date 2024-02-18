@@ -1,0 +1,1049 @@
+/* Styling header containing hotel logo, name & 'book your stay' button */
+header {
+  width: 100%;
+  height: 115px;
+  background-color:#fdf7f1;
+  * {box-sizing:border-box}
+}
+
+@media screen and (max-width: 1100px) {
+  header {
+    width: 50%;
+  }
+}
+
+  #logo {
+    object-position: left;
+    object-fit: contain;
+    max-width: 150px;
+    max-height: 150px;
+    top: -19px;
+    left: -15px;
+    display: block;
+    position: relative;
+  }
+   
+  #hotel-name {
+    font-family: Didot;
+    font-style: serif;
+    font-variant: small-caps;
+    font-size: 2.25em;
+    font-weight: 500;
+    color: #b99740;
+    top: -10px;
+    left: 133px;
+    position: absolute;
+  }
+
+  @media screen and (max-width: 1100px) {
+    #hotel-name {
+      top: 10px;
+      font-size: 1.5em;
+    }
+  }
+  
+  #bys {
+    font-family: Didot;
+    font-size: 22.5px;
+    font-weight: 500;
+    text-align: center;
+    color: #dcc079;
+    background-color: #003559;
+    padding:  8px 16px;
+    display: inline-block;
+    position: absolute;
+    object-position: right;
+    top: 33px;
+    right: 33px;
+    border: none;
+  }
+
+  @media screen and (max-width: 1100px) {
+    #bys {
+      font-size: 15px;
+    }
+  }
+    
+  #bys:hover {
+    background-color: #809BCE;
+    color: black;
+  }
+
+  * {box-sizing: border-box}
+  body {margin:0}
+  .mySlides {display: none}
+  img {vertical-align: middle;}
+
+/* Slideshow container */
+  .slideshow-container {
+    width: 100%;
+    height: 407px;
+    position: relative;
+    margin: auto;
+  }
+
+  .slidepic {
+    width: 1270px;
+    height: 435px;
+  }
+
+  @media screen and (max-width: 1100px) {
+    .slidepic {
+      width: 635px;
+      height: auto;
+    }
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgb(197, 197, 197);
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, 
+  .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #00406b;
+    background: #fff;
+    font-size: 25px;
+    padding: 5px 10px;
+    position: absolute;
+    left: 0;
+    top: 375px;
+    width: auto;
+    text-align: left;
+  }
+
+  @media screen and (max-width: 1100px) {
+    .text {
+      margin-top: -100px;
+      font-size: 15px;
+    }
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: .4
+    } 
+    to {
+      opacity: 1
+    }
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {
+      font-size: 11px
+    }
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+  }
+
+  .descT {
+    text-align: left;
+    margin-left: 33px;
+    margin-right: 33px;
+  }
+
+  .desc {
+    height: 390px;
+    width: 335px;
+    position: relative;
+    margin-left: 465px;
+    margin-right: 465px;
+    border: 0.5px #000 solid;
+    border-radius: 7px 7px 7px 7px;
+  }
+
+  @media screen and (max-width: 1100px) {
+    .desc {
+      float: left;
+      margin-left: 110px;
+      margin-bottom: 20px;
+    }
+  }
+
+  #L, #P, #S, #G, #FH, #CR, #R, #RS, #NSR, #C, #WF, #FP {
+    position: absolute;
+    position: inline-block;
+  }
+
+  #L, #G, #FH, #CR, #C {
+    width: 45px;
+    height: 32.5px;
+  }
+
+  #P, #S, #R, #FP {
+    width: 40px;
+    height: 37.5px;
+  }
+
+  #L {
+    position: top;
+    position: left;
+    top: 33px;
+    left: 30px;
+  }
+
+  #P {
+    position: top;
+    position: center;
+    top: 33px;
+    left: 150px;
+  }
+  
+  #S {
+    position: top;
+    position: right;
+    top: 33px;
+    right: 30px;
+  }
+
+  #G {
+    position: top;
+    position: left;
+    top: 122.5px;
+    left: 30px;
+  }
+
+  #FH {
+    position: top;
+    position: center;
+    width: 45px;
+    height: 45px;
+    top: 115.5px;
+    left: 150px;
+  }
+
+  #CR {
+    position: top;
+    position: right;
+    top: 122.5px;
+    right: 30px;
+  }
+
+  #R {
+    position: top;
+    position: left;
+    top: 215px;
+    left: 30px;
+  }
+
+  #RS {
+    position: top;
+    position: center;
+    width: 50px;
+    height: 40px;
+    top: 210px;
+    left: 150px;
+  }
+
+  #NSR {
+    width: 57.5px;
+    height: 57.5px;
+    position: top;
+    position: right;
+    top: 200px;
+    right: 25px;
+  }
+
+  #C {
+    position: top;
+    position: left;
+    top: 300px;
+    left: 30px;
+  }
+
+  #WF {
+    width: 43px;
+    height: 40.5px;
+    position: top;
+    position: left;
+    top: 295px;
+    left: 150px;
+  }
+
+  #FP {
+    position: top;
+    position: right;
+    top: 295px;
+    right: 35px;
+  } 
+
+  #Lcap, #Pcap, #Scap, #Gcap, #FHcap, #CRcap, #Rcap, #RScap, #NSRcap, #Ccap, #WFcap, #FPcap {
+    font-size: 9px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 0, 0);
+    position: relative;
+    position: inline-block;
+  }
+
+  #Lcap {
+    top: 67.5px;
+    left: 35px;
+    text-align: left;
+  }
+
+  #Pcap {
+    top: 48.5px;
+    left: 1.5px;
+    text-align: center;
+  }
+
+  #Scap {
+    top: 29.5px;
+    right: 42.5px;
+    text-align: right;
+  }
+
+  #Gcap {
+    top: 96.5px;
+    left: 25px;
+    text-align: left;
+  }
+
+  #FHcap {
+    top: 76.5px;
+    left: 5px;
+    text-align: center;
+  }
+
+  #CRcap {
+    top: 56.5px;
+    right: 10.5px;
+    text-align: right;
+  }
+
+  #Rcap {
+    top: 130px;
+    left: 22.5px;
+    text-align: left;
+  }
+
+  #RScap {
+    top: 111px;
+    left: 2.5px;
+    text-align: center;
+  }
+
+  #NSRcap {
+    top: 90px;
+    right: 11px;
+    text-align: right;
+  }
+
+  #Ccap {
+    top: 155px;
+    left: 10.5px;
+    text-align: left;
+  }
+
+  #WFcap {
+    top: 135px;
+    left: 1px;
+    text-align: center;
+  }
+
+  #FPcap {
+    top: 115px;
+    right: 27.5px;
+    text-align: right;
+  }
+
+  #testimonials {
+    margin-top: 75px;
+    text-align: center;
+  }
+  
+  .guest1 {
+    width: 85%;
+    height: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    position: relative;
+  }
+
+  .test1 {
+    border: 10px #809BCE solid;
+    margin-bottom: 33px;
+  }
+
+  .guest2 {
+    width: 85%;
+    height: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 10px;
+    position: relative;
+  }
+
+  .test2 {
+    border: 10px #dcc079 solid;
+    margin-bottom: 33px;
+  }
+
+  .guest3 {
+    width: 85%;
+    height: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 10px;
+    position: relative;
+  }
+
+  .test3 {
+    border: 10px #003559 solid;
+  }
+
+  .test1, .test2, .test3 {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .author {
+    color: black;
+    text-align: center
+  }
+
+  #o, #cap {
+    text-align: center;
+  }
+
+  .offer1 {
+    background-color: #fff;
+    width: 95%;
+    height: 300px;
+    position: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  .offer2 {
+    background-color: #fff;
+    width: 95%;
+    height: 300px;
+    position: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  .offer3 {
+    background-color: #fff;
+    width: 95%;
+    height: 300px;
+    position: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  #sb, #sd, #iwc {
+    width: 415px;
+    height: 275px;
+    position: absolute;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+  #sb, #iwc {
+    left: 50px;
+  }
+
+  #sd {
+    right: 50px;
+  }
+
+  #d1, #d2, #d3 {
+    width: 675px;
+  }
+
+  #o1, #d1, #o3, #d3 {
+    text-align: left;
+    margin-left: 500px;
+  }
+
+  #f1, #f3 {
+    text-align: left;
+    margin-left: 980px;
+    margin-top: -50px;
+  }
+
+  .f {
+    background-color: #003559;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding:  8px 16px;
+    text-align: center;
+    display: inline-block;
+    font-family: warnock;
+    font-size: 16px;
+    margin-top: 33px;
+    margin-left: 175px;
+    margin-right: auto;
+    margin-bottom: 100px;
+  } 
+    
+  .f:hover {
+    background-color: #809BCE;
+    color: black;
+  }
+
+  #o2, #d2, #f2 {
+    text-align: left;
+    margin-left: 33px;
+  }
+
+  #sb {
+    margin-top: -145px;
+  }
+
+  #sd {
+    margin-top: -90px
+  }
+
+  #iwc {
+    margin-top: -145px;
+  }
+
+  @media screen and (max-width: 1100px) {
+    #offer1, #offer2, #offer3 {
+      width: 47.5%;
+      height: 150px;
+      float: left;
+    }
+
+    #sb, #sd, #iwc {
+      width: 205px;
+      height: 135px;
+      float: left;
+    }
+
+    #sb {
+      margin-top: -75px;
+    }
+
+    #sd {
+      margin-top: -75px;
+      margin-right: -30px;
+    }
+
+    #iwc {
+      margin-top: -110px;
+    }
+
+    #o1, #o3 {
+      margin-left: 250px;
+      font-size: 30px;
+    }
+
+    #o2 {
+      margin-right: 250px;
+      font-size: 30px;
+    }
+
+    #d1, #d3 {
+      margin-left: 250px;
+      font-size: 23px;
+      width: 50%;
+    }
+
+    #d2 {
+      margin-right: 250px;
+      font-size: 23px;
+      width: 50%;
+    }
+
+    #f1, #f3 {
+      margin-left: 475px;
+      font-size: 17.5px;
+    }
+
+    #f2 {
+      margin-right: 450px;
+      font-size: 17.5px;
+    }
+
+  }
+
+  .parallax1 {
+    /* The image used */
+    background-image: url(Webpics/SB2.jpg);
+  
+    /*  Dimensions */
+    max-width: 100%;
+    height: 465px;
+    margin-bottom: -30px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax2 {
+    /* The image used */
+    background-image: url(Webpics/SD2.jpg);
+  
+    /*  Dimensions */
+    max-width: 100%;
+    height: 465px;
+    margin-bottom: -30px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax3 {
+    /* The image used */
+    background-image: url(Webpics/IWC2.jpg);
+  
+    /*  Dimensions */
+    max-width: 100%;
+    height: 465px;
+    margin-bottom: -30px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .tag {
+    text-align: center;
+  }
+
+  .caption, .caption2 {
+    text-align: center;
+    width: 100%;
+    margin-left: 5px;
+    font-size: 25px;
+  }
+
+  .caption {
+    font-size: 25px;
+  }
+
+  .caption2 {
+    font-size: 17.5px;
+  }
+
+  .tc {
+    margin-bottom: 10px;
+  }
+
+  .pititle {
+    text-align: left;
+    margin-left: 25px;
+  }
+
+  .pi {
+    width: 95%;
+    margin-left: 30px;
+  }
+
+  @media screen and (max-width: 1100px) {
+    .pi {
+      float: left;
+    }
+  }
+
+  .deals {
+    font-size: 25px;
+    width: 50%;
+    text-align: left;
+    margin-left: 350px;
+    margin-right: 350px;
+  }
+
+  #price {
+    width: 75%;
+    margin-left: 155px;
+  }
+
+  #gen {
+    width: 80%;
+    margin-left: 125px;
+  }
+
+  #deal {
+    width: 75%;
+    margin-left: 165px;
+  }
+
+  .tc {
+    margin-bottom: 50px;
+  }
+
+  #contact-pic {
+    width: 100%;
+    height: 485px;
+    background-size: cover;
+  }
+
+  #fdbfbtn {
+    background-color: #003559;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding:  8px 16px;
+    text-align: center;
+    display: inline-block;
+    font-family: warnock;
+    font-size: 30px;
+    object-position: right;
+    position: absolute;
+    right: 300px;
+    top: 400px
+  }
+  
+  #fdbfbtn:hover {
+    background-color: #809BCE;
+    color: black;
+  }
+  
+  #inqfbtn {
+    background-color: #003559;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding:  8px 16px;
+    text-align: center;
+    display: inline-block;
+    font-family: warnock;
+    font-size: 30px;
+    object-position: left;
+    position: absolute;
+    left: 300px;
+    top: 400px
+  }
+  
+  #inqfbtn:hover {
+    background-color: #809BCE;
+    color: black;
+  }
+
+  #contact {
+    text-align: center;
+    margin-top: 7.5px;
+  }
+  
+  #call {
+    width: 5%;
+    height: auto;
+    left: 0;
+    position: absolute;
+    position: inline-block;
+    margin-left: 50px;
+  }
+  
+  #dnumber {
+    font-size: 33px;
+    text-align: left;
+    margin-top: 43px;
+    margin-left: 150px;
+  }
+  
+  #demail {
+    width: 5%;
+    height: auto;
+    left: 0;
+    position: absolute;
+    position: inline-block;
+    margin-left: 50px;
+  }
+  
+  #emailaddress {
+    font-size: 33px;
+    text-align: left;
+    margin-top: 43px;
+    margin-left: 150px;
+  }
+  
+  #location {
+    width: 5%;
+    height: auto;
+    left: 0;
+    position: absolute;
+    position: inline-block;
+    margin-left: 50px;
+  }
+  
+  #address {
+    font-size: 33px;
+    text-align: left;
+    margin-top: 43px;
+    margin-left: 150px;
+  }
+  
+  #wa {
+    width: 11.5%;
+    height: auto;
+    object-fit: contain;
+    right: 495px;
+    top: 600px;
+    position: absolute;
+    position: inline-block;
+  }
+    
+  #fb {
+    width: 10%;
+    height: auto;
+    object-fit: contain;
+    right: 345px;
+    top: 700px;
+    position: absolute;
+    position: inline-block;
+  }
+    
+  #ig {
+    width: 11.5%;
+    height: auto;
+    object-fit: contain;
+    right: 170px;
+    top: 600px;
+    position: absolute;
+    position: inline-block;
+  }
+    
+  #t {
+    width: 15.5%;
+    height: auto;
+    object-fit: contain;
+    right: -5px;
+    top: 690px;
+    position: absolute;
+    position: inline-block;
+  }
+
+  #map {
+    margin-top: 50px;
+  }
+
+  @media screen and (max-width: 1100px) {
+    #fdbfbtn {
+      float: left;
+      left: 150px;
+      font-size: 15px;
+    }
+
+    #inqfbtn {
+      float: right;
+      right: 150px;
+      font-size: 15px;
+    }
+
+    #dnumber, #emailaddress, #address {
+      font-size: 23px;
+    }
+
+    #demail {
+      top: 665px;
+    }
+
+    #location {
+      top: 730px;
+    }
+
+    #wa {
+      width: 7.5%;
+      height: auto;
+      right: 10px;
+      top: 570px;
+    }
+      
+    #fb {
+      width: 6.5%;
+      height: auto;
+      right: 10px;
+      top: 635px;
+    }
+      
+    #ig {
+      width: 7.5%;
+      height: auto;
+      right: 10px;
+      top: 695px;
+    }
+      
+    #t {
+      width: 9.5%;
+      height: auto;
+      right: 10px;
+      top: 755px;
+    }
+  } 
+
+  #fdbf {
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .form1 {
+    margin-left: 450px;
+    margin-right: auto;
+  }
+  
+  #sub1 {
+    background-color: #003559;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding:  8px 16px;
+    text-align: center;
+    display: inline-block;
+    font-family: warnock;
+    font-size: 16px;
+    margin-top: 33px;
+    margin-left: 175px;
+    margin-right: auto;
+    margin-bottom: 100px;
+  }
+  
+  #sub1:hover {
+    background-color: #809BCE;
+    color: black;
+  }
+
+  #inqf {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .form2 {
+    margin-left: 450px;
+    margin-right: auto;
+  }
+  
+  #sub2 {
+    background-color: #003559;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding:  8px 16px;
+    text-align: center;
+    display: inline-block;
+    font-family: warnock;
+    font-size: 16px;
+    margin-top: 33px;
+    margin-left: 175px;
+    margin-right: auto;
+    margin-bottom: 100px;
+  } 
+  
+  #sub2:hover {
+    background-color: #809BCE;
+    color: black;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .form1, .form2 {
+      float: left;
+      margin-left: 150px;
+    }
+  }
+  
+  #tick {
+    object-position: center;
+    object-fit: contain;
+    width: 130px;
+    height: 130px;
+    top: 30px;
+    right: 550px;
+    left: 550px;
+    display: block;
+    position: relative;
+  }
+
+  @media screen and (max-width: 1200px) {
+    #tick {
+      float: left;
+      width: 65px;
+      height: 65px;
+      left: 250px;
+      margin-top: -20px;
+    }
+  }
+
+  #scs {
+    margin-top: 75px;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  #rep {
+    text-align: center;
+    font-size: 20px;
+  }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Page name: Submission -->
+        <title>D'Hotel │ Form submission success!</title>
+        
+        <!-- Links to external CSS -->
+        <link rel="stylesheet" type="text/css" href="all_mainextcss.css">
+        <link rel="stylesheet" type="text/css" href="R.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script>
+            function Enew() {
+                alert("Thank you for signing up for our newsletter! Stay tuned for updates!")
+            }
+        </script>
+    </head>
+
+    <div class="topnav" id="myTopnav">
+        <a href="R_home.html">HOME</a>
+        <a href="N_events_main.html">EVENT</a>
+                    
+        <div class="dropdown">
+            <button class="dropbtn">ROOMS
+            </button>
+                
+            <div class="dropdown-content">
+                <a href="Z_GuestRooms.html">Guest Rooms</a>
+                <a href="Z_Club.html">Clubs & Suites</a>
+            </div>
+        </div>
+
+        <a href="J_Mainpage.html">DINING</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">SERVICES
+            </button>
+            
+            <div class="dropdown-content">
+                <a href="Nic_SnA.html"> Services & Amenities </a>
+                <a href="Nic_book.html">Booking</a>
+            </div>
+        </div>
+
+        <a href="R_contact.html">CONTACT US</a>
+
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+        }
+    </script>
+    
+    <body>
+        <img src="Webpics/Tick.png" alt="Confirmation tick" id="tick">
+        <h2 id="scs">Your form has been successfully submitted!</h2>
+        <p id="rep">You should receive a reply in <em>3 working days</em>.</p>
+    </body>
+
+    <footer style="z-index: 1;" class="social-footer">
+        <div class="social-footer-left">
+            <a href="R_home.html"><img id="flogo" src="Webpics/DLogo.png"></a>
+        </div>
+  
+        <div id="newsletter">
+            <h5>Join our newsletter!</h5>
+            <input type="email" class="fmail" placeholder="Enter your email"><button onclick="Enew()" class="button2">→</button>
+        </div>
+  
+        <div style="display: block; width: 20%;margin-left: auto;margin-right: auto;" class="social-footer-icons">
+            <ul  class="menu simple">
+                <p><a href="#" id="Cus">Contact Us!</a></p>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </ul>
+        </div>
+    </footer>
+</html>

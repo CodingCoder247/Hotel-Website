@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Page name: Homepage -->
+        <title>D'Hotel │ Home</title>
+        
+        <!-- Links to external CSS -->
+        <link rel="stylesheet" type="text/css" href="all_mainextcss.css">
+        <link rel="stylesheet" type="text/css" href="R.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script>
+            function Enew() {
+                alert("Thank you for signing up for our newsletter! Stay tuned for updates!")
+            }
+        </script>
+    </head>
+
+    <!-- Header containing hotel name, logo and 'book your stay' button -->
+    <header>
+        <a href="R_home.html">
+            <img id="logo" src="Webpics/DLogo.png" alt="Hotel logo hyperlink to homepage.">
+        </a> 
+        <h1 id="hotel-name">D'Hotel</h1>
+        <button id="bys" onclick="window.location.href='Z_booking2.html'"><strong>BOOK YOUR STAY</strong></button>
+    </header>
+    
+    <div class="topnav" id="myTopnav">
+        <a href="R_home.html">HOME</a>
+        <a href="N_events_main.html">EVENT</a>
+                    
+        <div class="dropdown">
+            <button class="dropbtn">ROOMS
+            </button>
+                
+            <div class="dropdown-content">
+                <a href="Z_GuestRooms.html">Guest Rooms</a>
+                <a href="Z_Club.html">Clubs & Suites</a>
+            </div>
+        </div>
+
+        <a href="J_Mainpage.html">DINING</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">SERVICES
+            </button>
+            
+            <div class="dropdown-content">
+                <a href="Nic_SnA.html"> Services & Amenities </a>
+                <a href="Nic_book.html">Booking</a>
+            </div>
+        </div>
+
+        <a href="R_contact.html">CONTACT US</a>
+
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+        }
+    </script>
+    
+    <body>
+        <body>
+            
+        <!-- Automatic slideshow to browse through hotel gallery -->
+        <div class="slideshow-container">
+
+            <!-- Slide 1: Exterior -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 10</div>
+                <img class="slidepic" src="Webpics/DH.png">
+                <div class="text">D'HOTEL: A majestic masterpiece of architectural splendour.</div>
+            </div>
+            
+            <!-- Slide 2: Lobby -->
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 10</div>
+                <img class="slidepic" src="Webpics/Lobby1.png">
+                <div class="text">LOBBY: A palatial sanctuary of elegance.</div>
+            </div>
+            
+            <!-- SLide 3: Lounge -->
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 10</div>
+                <img class="slidepic" src="Webpics/Lounge1.png">
+                <div class="text">LOUNGE: A sumptuous haven of refined relaxation.</div>
+            </div>
+            
+            <!-- Slide 4: Room -->
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 10</div>
+                <img class="slidepic" src="Webpics/Room1.png">
+                <div class="text">SUITE: A world of sublime luxury.</div>
+            </div>
+            
+            <!-- Slide 5: Bath -->
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 10</div>
+                <img class="slidepic" src="Webpics/Bath1.png">
+                <div class="text">EN SUITE BATHROOM: Opulently adorned in shimmering marble.</div>
+            </div>
+              
+            <!-- Slide 6: Pool -->
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 10</div>
+                <img class="slidepic" src="Webpics/Pool1.png">
+                <div class="text">OUTDOOR POOL: A resplendent aquatic oasis.</div>
+            </div>
+            
+            <!-- Slide 7: Spa -->
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 10</div>
+                <img class="slidepic" src="Webpics/Spa1.png">
+                <div class="text">SPA: An exquisite retreat of wellness and rejuvenation.</div>
+            </div>
+            
+            <!-- Slide 8: Gym -->
+            <div class="mySlides fade">
+                <div class="numbertext">8 / 10</div>
+                <img class="slidepic" src="Webpics/Gym1.png">
+                <div class="text">GYM: A state-of-the-art fitness utopia.</div>
+            </div>
+            
+            <!-- Slide 9: Hall -->
+            <div class="mySlides fade">
+                <div class="numbertext">9 / 10</div>
+                <img class="slidepic" src="Webpics/Hall1.png">
+                <div class="text">MAIN BALLROOM: A grand symphony of impeccable design & functionality.</div>
+            </div>
+            
+            <!-- Slide 10: Food -->
+            <div class="mySlides fade">
+                <div class="numbertext">10 / 10</div>
+                <img class="slidepic" class="slidepic" src="Webpics/Food1.png">
+                <div class="text">Michelin-starred CULINARY MASTERPIECES: Presenting an unrivalled, epicurean journey.</div>
+            </div>
+
+        <br>
+
+        <!-- Dots(indicators) to show users current slide they are on -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+    </div>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+        </script>
+    </div>
+    
+    <!-- D'Hotel general description -->
+        <h1>About Us</h1>
+        <p class="descT">D'Hotel is the embodiment of sophistication, class, elegance and luxury. At D'Hotel, our guests top our priority list. Hence, we leave no stone unturned in ensureing the perfect stay for each and every one of our guests.</p>
+        <p class="descT">D'Hotel was established in May 2023 and has since lived up to its status as a luxury hotel. Here at D'Hotel, we believe in upholding respect and providing tender loving care to our guests. This has been made possible by the multifarious amenities that include but are not limited to:</p>
+        
+        <!-- List of amenities -->
+        <div class="desc">
+            <img id="L" src="Webpics/lounge.png">
+            <p id="Lcap">LOUNGE</p>
+
+            <img id="P" src="Webpics/pool.png">
+            <p id="Pcap">POOL</p>
+
+            <img id="S" src="Webpics/spa.png">
+            <p id="Scap">SPA</p>
+
+            <img id="G" src="Webpics/gymnasium.png">
+            <p id="Gcap">GYMNASIUM</p>
+
+            <img id="FH" src="Webpics/functionhall.png">
+            <p id="FHcap">FUNCTION HALLS</p>
+
+            <img id="CR" src="Webpics/conferencerooms.png">
+            <p id="CRcap">CONFERENCE ROOMS</p>
+
+            <img id="R" src="Webpics/restaurant.png">
+            <p id="Rcap">RESTAURANTS</p>
+
+            <img id="RS" src="Webpics/roomservice.png">
+            <p id="RScap">ROOM SERVICE</p>
+
+            <img id="NSR" src="Webpics/nosmoke.png">
+            <p id="NSRcap">NON-SMOKING ROOMS</p>
+
+            <img id="C" src="Webpics/concierge.png">
+            <p id="Ccap">24-HOUR CONCIERGE</p>
+
+            <img id="WF" src="Webpics/wifi.png">
+            <p id="WFcap">FREE HIGH-SPEED WI-FI</p>
+
+            <img id="FP" src="Webpics/parking.png">
+            <p id="FPcap">FREE PARKING</p>
+        </div>
+        
+        <p class="descT">Our team, made up of only the finest in the hospitality industry are here to welcome guests and provide them with the best experience possible to express our gratitude for choosing us. Due to our diverse team, D'Hotel has also been popular among indivudals from all walks of life and we have been fortunate to have such individuals from all around the world grace our hotel.</p>
+        
+        <!-- Testimonials section -->
+        <h2 id="testimonials">Guests' Testimonials</h2>
+        <div class="test1">
+            <p class="guest1">"When I visited Singapore in early May, I decied to give D'Hotel a try even though I was slightly sceptical at first with D'Hotel being fairly new. To my surprise, my stay at D'Hotel was perfect in every sense, from the food to the service, to the spacious rooms. I will surely be coming back!"
+            <p class="author">~ Agoda user, May 2023</p>
+        </div>
+        <div class="test2">
+            <p class="guest2">"D'Hotel is hands-down the best hotel I've ever stayed in. From the time, I stepped out of my car upon arrival at the hotel, I was treated like a queen by the staff. For a fuss-free and enjoyable holiday, D'Hotel would be your best bet."
+            <p class="author">~ TripAdvisor user, May 2023</p>
+        </div>
+        <div class="test3">
+            <p class="guest3">"I loved my experience at D'Hotel! I had the time of my life with my family when we stayed at D'Hotel just about a month ago. At D'Hotel, no guest can ever get bored with all D'Hotel has to offer."
+            <p class="author">~ Booking.com user, June 2023</p>
+        </div>
+
+        <!--Offers section of page with hyperlinks to redierect users to information page with more details-->
+        <h2 id="o">Offers of the Month</h2>
+        <p id="cap">Seize some spectacular Joyful July deals at D'Hotel today!</p>
+            
+        <div class="offer1">
+            <h3 id="o1">1-for-1 Sushi Buffet @ Shogun Sushi Bar</h3>
+            <img id="sb" src="Webpics/SB.jpeg">
+            <p id="d1">Indulge in a generous selection of sushi for the month of July and bring along a partner for free!</p>
+            <button class="f" id="f1" onclick="window.location.href='R_buffet.html'">Find out more</button>
+        </div>
+        
+        <div class="offer2">   
+            <h3 id="o2">'Twice the Fun' Spa Deals</h3>
+            <img id="sd" src="Webpics/SD.jpeg">
+            <p id="d2">Enjoy discounts of up to 40% on selected spa services when you bring a friend along for a spa day at D'Hotel!</p>
+            <button class="f" id="f2" onclick="window.location.href='R_spa.html'">Find out more</button>
+        </div> 
+        
+        <div class="offer3">
+            <h3 id="o3">'Icing on the (Wedding) Cake' Deal</h3>
+            <img id="iwc" src="Webpics/IWC.jpeg">
+            <p id="d3">Planning a wedding? Secure extraordinarily sweet deals when you choose D'Hotel!</p>
+            <button class="f" id="f3" onclick="window.location.href='R_wed.html'">Find out more</button>
+        </div>
+    </body>
+
+    <footer style="z-index: 1;" class="social-footer">
+        <div class="social-footer-left">
+            <a href="R_home.html"><img id="flogo" src="Webpics/DLogo.png"></a>
+        </div>
+  
+        <div id="newsletter">
+            <h5>Join our newsletter!</h5>
+            <input type="email" class="fmail" placeholder="Enter your email"><button onclick="Enew()" class="button2">→</button>
+        </div>
+  
+        <div style="display: block; width: 20%;margin-left: auto;margin-right: auto;" class="social-footer-icons">
+            <ul  class="menu simple">
+                <p><a href="#" id="Cus">Contact Us!</a></p>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </ul>
+        </div>
+    </footer>
+</html>
